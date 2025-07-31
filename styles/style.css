@@ -90,7 +90,7 @@ header {
   flex-direction: column;
 
   width: 100%;
-  direction: rtl;
+  /* direction: rtl; */
 }
 
 .title > h2 {
