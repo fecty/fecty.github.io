@@ -1,0 +1,143 @@
+:root {
+  --left-gap: 10px;
+  --right-gap: 10px;
+  --bottom-gap: 10px;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", "Arial", monospace;
+}
+
+h1,
+h2 {
+  font-weight: normal;
+}
+p,
+ul,
+ol {
+  margin-bottom: var(--bottom-gap);
+}
+
+ul,
+ol {
+  padding-left: calc(var(--left-gap) * 2);
+}
+body {
+  padding-left: var(--left-gap);
+  width: 70vw;
+  margin: 10px auto;
+  transition: width 0.4s ease;
+  /* border: 5px solid black; */
+  /* border-radius: 10px; */
+}
+
+@media (max-width: 1000px) {
+  body {
+    width: 100vw;
+  }
+}
+
+/* HEADER STYLES */
+
+#home-link {
+  /* background-color: red; */
+  max-width: fit-content;
+  /* padding: 5px 5px; */
+  display: block;
+  margin: 0 auto;
+  /* border: 2px solid black; */
+  border-radius: 100px;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: blue;
+  transition: color 0.2s;
+}
+
+#home-link:hover {
+  color: red;
+}
+
+@media print {
+  body {
+    width: 100vw;
+    border: none;
+    font-size: 0.9em;
+  }
+  #home-link {
+    display: none;
+  }
+}
+
+#cv-title {
+  font-size: 3em;
+  text-align: center;
+  margin: 0;
+}
+.socials-nav {
+  padding: 0;
+  min-width: 100%;
+}
+.socials-nav > ul {
+  /* display: flex; */
+  list-style-type: none;
+  width: fit-content;
+  margin: 0 auto;
+}
+.socials-nav li {
+  display: inline;
+}
+.socials-nav li:not(:last-child)::after {
+  content: " | ";
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+
+/* Education Section */
+
+.education-table {
+  /* border: 5px black solid; */
+  min-width: 100%;
+  border-spacing: 0 10px;
+}
+
+.education-table p {
+  margin: 0;
+}
+
+.education-table td > p:first-child {
+  font-weight: bold;
+}
+
+.education-table tr td:first-child {
+  text-align: left;
+}
+
+.education-table tr td:last-child {
+  text-align: right;
+  padding: var(--right-gap);
+}
+
+/* Experience Section */
+
+/* Skills Section */
+.skills-table {
+  width: 100%;
+  border-spacing: 5px;
+}
+
+.skills-table tr td:first-child {
+  font-weight: bold;
+}
+
+/* Project Section */
+
+/* Certificates Section */
+#certificates p {
+  margin: 0;
+}
