@@ -101,17 +101,13 @@ header {
   text-align: center;
 }
 
+header > .title-container {
+  position: relative;
+}
 #header-title {
   font-size: clamp(20px, 3em, 3em);
-  margin: 0;
-}
-
-header > .title-container {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  align-items: baseline;
-  position: relative;
+  margin: 0 auto;
+  width: fit-content;
 }
 
 /* color mode elements styles */
@@ -123,6 +119,7 @@ header > .title-container {
   height: fit-content;
   position: absolute;
   right: 0px;
+  top: 0px;
 }
 
 #theme-button:hover {
@@ -130,7 +127,7 @@ header > .title-container {
 }
 
 #switch-theme-icon {
-  width: clamp(40px, 3vw, 60px);
+  width: clamp(50px, 3vw, 60px);
   filter: grayscale(100%);
   pointer-events: auto;
 }
@@ -143,9 +140,7 @@ header > .title-container {
 
   #header-title {
     font-size: clamp(40px, 7.5vw, 60px);
-  }
-  .title-container {
-    justify-content: start;
+    margin: 0;
   }
 
   nav {
