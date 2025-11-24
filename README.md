@@ -1,4 +1,4 @@
-# Zurain Portfolio Website
+# [Zurain Portfolio Website](https://fecty.github.io/)
 
 ## Overview
 
@@ -7,27 +7,31 @@ This is a personal portfolio website for Zurain Nazir, designed to showcase skil
 ## Project Structure
 
 ```
-index.html         # Main entry-point HTML file for the website
-styles.css         # Main stylesheet of index.html for layout and design
-base-styles.css    # Base stylesheet for all html documents
-base-scripts.js    # Base script file for all html documents
-assets/            # Folder for images, icons, and other assets
-README.md          # Project documentation
-LICENSE            # License information
+assets/                        # Folder for images, icons, and other assets
+js/                            # Folder containing javascript files
+pages/                         # Folder containing html pages
+styles/                        # Folder containing stylesheets for project.
+.gitignore                     # Contains files to remain untracked by Git
+google1c5a59d56df67fd5.html    # Verification file for Google Search Console
+index.html                     # Main entry-point HTML file for the website
+LICENSE                        # License information
+README.md                      # Project documentation
+sitemap.xml                    # Sitemap of project. For search engines
+
 ```
 
 ## Usage
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/fecty/Zurain-Portfolio-Website.git
+   git clone https://github.com/fecty/fecty.github.io
    ```
 2. Open `index.html` in your web browser to view the site locally.
 
 ## Customization
 
-- Update `index.html` to change content, sections, or add new projects.
-- Modify `styles.css` to adjust colors, spacing, or layout as needed.
+- Update `index.html` to change content, sections, or add new projects. Also adjust other html files in `pages/` accordingly.
+- Modify `pages/base-styles.css` to adjust colors, spacing, or layout as needed.
 - Add images or other resources to the `assets/` folder.
 
 ## License
