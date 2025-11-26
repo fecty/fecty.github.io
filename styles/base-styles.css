@@ -130,6 +130,7 @@ header > .title-container {
   width: clamp(50px, 3vw, 60px);
   filter: grayscale(100%);
   pointer-events: auto;
+  user-select: none;
 }
 
 @media (max-width: 700px) {
