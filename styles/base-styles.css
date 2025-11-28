@@ -56,6 +56,11 @@ p {
   margin-bottom: 10px;
   /* text-indent: 10px; */
 }
+main ul li {
+  /* list-style-position: inside; */
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
 
 /* nav styles */
 nav {
