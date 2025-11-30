@@ -141,3 +141,7 @@ body {
 #certificates p {
   margin: 0;
 }
+
+#phone {
+  display: none;
+}
