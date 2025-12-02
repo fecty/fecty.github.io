@@ -27,6 +27,7 @@ sitemap.xml                    # Sitemap of project. For search engines
    git clone https://github.com/fecty/fecty.github.io
    ```
 2. Open `index.html` in your web browser to view the site locally.
+3. Additionally it is possible to host the project with backend support such as Express.js or Flask.
 
 ## Customization
 
