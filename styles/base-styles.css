@@ -72,6 +72,12 @@ a:hover {
 p {
   margin-bottom: 10px;
 }
+
+h2 {
+  font-size: clamp(20px, 1.3em, 2.2em);
+  margin-bottom: 5px;
+}
+
 main ul li {
   margin-bottom: 10px;
   margin-left: 20px;
@@ -171,7 +177,7 @@ header > .title-container {
   /* margin-top: 10px; */
 }
 
-h2 {
+.hero h2 {
   font-size: clamp(16px, 1.2em, 2em);
 }
 
