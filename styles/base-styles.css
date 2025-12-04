@@ -16,6 +16,10 @@
   --link-color: #444;
   --hovered-link-color: #000;
   --shadow-color: rgba(0, 0, 0, 0.15);
+
+  --hero-bg: #f4f6ff;
+  --hero-fg: #2a3335;
+  --hero-accent: hsla(11, 100%, 61%, 1);
 }
 
 body.dark-mode {
@@ -25,9 +29,22 @@ body.dark-mode {
   --fg: #efece3;
   --bg: rgb(16, 17, 19);
 
+  --hero-fg: #f4f6ff;
+  --hero-bg: #2a3335;
+  --hero-accent: hsla(11, 100%, 61%, 1);
+
   transition: color 0 ease, background-color 0 ease; /*Set to .4s in js*/
 }
 
+/* body styles */
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-size: clamp(18px, 1.8vw, 22px);
+  font-weight: 400;
+  transition: color var(--color-transition-speed) ease,
+    background-color var(--color-transition-speed) ease;
+}
 /* link styles */
 a {
   display: inline-block;
@@ -54,10 +71,8 @@ a:hover {
 /* Paragraph styles*/
 p {
   margin-bottom: 10px;
-  /* text-indent: 10px; */
 }
 main ul li {
-  /* list-style-position: inside; */
   margin-bottom: 10px;
   margin-left: 20px;
 }
@@ -77,23 +92,14 @@ nav > ul {
   gap: clamp(10px, 3vmin, 40px);
 }
 
-/* body styles */
-body {
-  background-color: var(--bg);
-  color: var(--fg);
-  font-size: clamp(18px, 1.8vw, 22px);
-  font-weight: 400;
-  transition: color var(--color-transition-speed) ease,
-    background-color var(--color-transition-speed) ease;
-}
-
 /* container styles */
 .container {
+  /* border: 5px solid var(--fg); */
+
   height: fit-content;
   width: 70%;
   margin: 10px auto;
   padding: 10px 20px;
-  border: 5px solid var(--fg);
   border-radius: 10px;
   transition: width 0.4s ease;
 }
@@ -138,6 +144,37 @@ header > .title-container {
   user-select: none;
 }
 
+.hero {
+  width: 100%;
+  margin: 0 auto;
+  /* border: 5px solid var(--hero-fg); */
+  border: 5px solid transparent;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  gap: 40px;
+  background-color: var(--hero-bg);
+  color: var(--hero-fg);
+  transition: border 0.2s ease;
+}
+
+.hero:hover {
+  border: 5px solid var(--hero-accent);
+}
+.hero a:hover {
+  color: var(--hero-accent);
+}
+
+.hero p {
+  font-weight: 500;
+  margin: 0;
+  /* margin-top: 10px; */
+}
+
+h2 {
+  font-size: clamp(16px, 1.2em, 2em);
+}
+
 @media (max-width: 700px) {
   .container {
     width: 100%;
@@ -156,5 +193,13 @@ header > .title-container {
 
   #switch-theme-icon {
     width: 40px;
+  }
+
+  .hero {
+    margin: 0;
+    width: 100%;
+    border: none;
+    gap: 10px;
+    flex-direction: column;
   }
 }
