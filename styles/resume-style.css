@@ -17,6 +17,10 @@ h1,
 h2 {
   font-weight: normal;
 }
+h1:not(#cv-title) {
+  text-decoration: underline;
+}
+
 p,
 ul,
 ol {
@@ -27,13 +31,13 @@ ul,
 ol {
   padding-left: calc(var(--left-gap) * 2);
 }
+
 body {
   padding-left: var(--left-gap);
   width: 70vw;
   margin: 10px auto;
   transition: width 0.4s ease;
-  /* border: 5px solid black; */
-  /* border-radius: 10px; */
+  font-size: 125%;
 }
 
 @media (max-width: 1000px) {
@@ -44,57 +48,43 @@ body {
 
 /* HEADER STYLES */
 
-#home-link {
-  max-width: fit-content;
-  display: block;
-  font-size: 1.5em;
-  font-family: sans-serif;
-  text-decoration: none;
-  color: blue;
-  transition: all 0.2s;
-}
-
-#home-link:hover {
-  color: red;
-  text-decoration: underline;
-}
-
-@media print {
-  body {
-    width: 100vw;
-    border: none;
-    font-size: 0.9em;
-  }
-  .options {
-    display: none !important;
-  }
-}
-
 .options {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
+  font-size: clamp(20px, 1.6vw, 35px);
+  color: rgb(0, 132, 255);
 }
 
 .options > button {
   border: none;
-  font-size: 1.5em;
+  font-size: inherit;
   font-family: sans-serif;
+  color: inherit;
   text-decoration: none;
-  color: blue;
   background-color: transparent;
   transition: all 0.2s;
 }
 
-.options > button:hover {
-  color: red;
+#home-link {
+  max-width: fit-content;
+  display: block;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s;
+}
+
+.options > button:hover,
+#home-link:hover {
   text-decoration: underline;
   cursor: pointer;
+  color: rgb(255, 55, 5);
 }
 
 #cv-title {
-  font-size: 3em;
+  font-size: 3.5em;
   text-align: center;
   margin: 0;
 }
@@ -103,7 +93,6 @@ body {
   min-width: 100%;
 }
 .socials-nav > ul {
-  /* display: flex; */
   list-style-type: none;
   width: fit-content;
   margin: 0 auto;
@@ -122,6 +111,7 @@ body {
 .education-table {
   /* border: 5px black solid; */
   min-width: 100%;
+  font-size: 1em;
   border-spacing: 0 10px;
 }
 
@@ -148,6 +138,7 @@ body {
 .skills-table {
   width: 100%;
   border-spacing: 5px;
+  font-size: 1em;
 }
 
 .skills-table tr td:first-child {
@@ -161,6 +152,13 @@ body {
   margin: 0;
 }
 
-#phone {
-  display: none;
+@media print {
+  body {
+    width: 100vw;
+    border: none;
+    font-size: 125%;
+  }
+  .options {
+    display: none !important;
+  }
 }
