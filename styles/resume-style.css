@@ -156,7 +156,7 @@ body {
   body {
     width: 100vw;
     border: none;
-    font-size: 125%;
+    font-size: 1em;
   }
   .options {
     display: none !important;
