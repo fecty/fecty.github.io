@@ -11,6 +11,7 @@ assets/                        # Folder for images, icons, and other assets
 js/                            # Folder containing javascript files
 pages/                         # Folder containing html pages
 styles/                        # Folder containing stylesheets for project.
+triangles/                     # Folder containing Webassembly code, along with relevant files.
 .gitignore                     # Contains files to remain untracked by Git
 google1c5a59d56df67fd5.html    # Verification file for Google Search Console
 index.html                     # Main entry-point HTML file for the website
