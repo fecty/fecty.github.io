@@ -213,3 +213,11 @@ header > .title-container {
     font-size: clamp(16px, 1.4vw, 22px);
   }
 }
+
+.project-images {
+  width: 80%;
+  display: block;
+  border: 5px var(--fg) solid;
+  border-radius: 10px;
+  margin: 0 auto;
+}
