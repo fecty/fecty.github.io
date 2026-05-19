@@ -166,3 +166,7 @@ body {
     display: none !important;
   }
 }
+
+#certificates {
+  display: none;
+}
