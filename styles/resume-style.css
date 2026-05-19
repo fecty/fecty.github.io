@@ -127,6 +127,10 @@ body {
   text-align: left;
 }
 
+.education-table tr td:first-child p:not(:first-child) {
+  text-indent: 10px;
+}
+
 .education-table tr td:last-child {
   text-align: right;
   padding: var(--right-gap);
